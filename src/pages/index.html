@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script type="text/javascript" src="../js/form.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <title>Zest - React Admin</title>
+</head>
+<body>
+    <div class="page">
+
+        <!--Menu lateral-->
+        <div class="menu-side">
+            
+            <!--Logo Principal Fixa-->
+            <div class="logo-menu-side">
+                <img src="../images/logo-menu-side.png">
+            </div>
+
+            <!--Logo/Perfil-->
+            <div class="logo-profile">
+                <img id="img-logo-profile" src="../images/profile-man.jpg">
+                <div class="details-profile">
+                    <h4>Jake Daniel</h4>    
+                    <p>Vendor</p>
+                </div>      
+            </div>
+
+            <!--Navegação Lateral-->
+            <ul class="side-navigation">
+                <li>
+                    <i class="glyphicon glyphicon-cloud" style="font-size:24px;"></i>
+                    <a class="link-side" href="dashboard.html">Dashboard</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-barcode" style="font-size:24px;"></i>
+                    <a class="link-side" href="index.html">Products</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-user" style="font-size:24px;"></i>
+                    <a  class="link-side" href="customers.html">Customers</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-time" style="font-size:24px;"></i>
+                    <a class="link-side">Vendors</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-folder-close" style="font-size:24px;"></i>
+                    <a  class="link-side">Billing</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-credit-card" style="font-size:24px;"></i>
+                    <a class="link-side">Orders</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-stats" style="font-size:24px;"></i>
+                    <a class="link-side">Reports</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-user" style="font-size:24px;"></i>
+                    <a class="link-side">Users</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-tag"  style="font-size:24px;"></i>
+                    <a class="link-side">Product Tags</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-briefcase" style="font-size:24px;"></i>
+                    <a class="link-side">Product Categories</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-envelope" style="font-size:24px;"></i>
+                    <a class="link-side">Mail Box</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-cog" style="font-size:24px;"></i>
+                    <a class="link-side">Settings</a>
+                </li>
+                <li>
+                    <i class="glyphicon glyphicon-tasks" style="font-size:24px;"></i>
+                    <a class="link-side">Multi Purpose</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--Menu Superior-->
+        <div class="menu-top">
+
+            <div class="menu-top-icons">
+                <a id="button-menu" href=""> 
+                    <i class="glyphicon glyphicon-menu-hamburger" style="font-size:24px;  color: #fff;"></i>
+                </a>
+                <a id="button-envelope">
+                    <i class="glyphicon glyphicon-envelope" style="font-size:20px; color: #fff;"></i>
+                </a>
+                <a id="button-notification">
+                    <i class="glyphicon glyphicon-bell" style="font-size:20px;  color: #fff;"></i>
+                </a>
+                <a id="button-search">
+                    <i class="glyphicon glyphicon-search" style="font-size:20px;  color: #fff;"></i>
+                </a>
+            </div>
+
+            <div class="menu-top-profile">
+                <img id="img-logo-profile2" src="../images/profile-man.jpg">
+                <div class="details-profile2">
+                    <p>Jake Daniel</p>
+                </div>
+                <div class="icon-chevron-down">
+                    <i class="glyphicon glyphicon-chevron-down" style="font-size:10px;  color: #fff;"></i>
+                </div>
+                <div class="icon-message">
+                    <i class="glyphicon glyphicon-comment" style="font-size:20px;  color: #fff;"></i>
+                </div>           
+            </div>
+        </div>
+
+        <!--Conteudo Principal-->
+        <div class="content">
+
+            <div class="title">
+                <h2 id="title-one">ADD PRODUCT</h2>
+            </div>
+
+            <!--Icon Configuração Fixa-->
+            <div class="fixed-gear">
+                <i id="fixed-gear-icon" class="glyphicon glyphicon-cog" style="font-size: 25px;"></i>
+            </div>
+
+            <section class="main-screen">
+                <h3 id="title-two">BASIC INFO</h3>
+
+                <!-- Formulario -->
+                <form id="form">
+                    <label class="label" for="productSku">Product SKU</label><br>
+                    <input class="input" type="text" id="productSku" required="required"><br>
+
+                    <label class="label" for="productName">Product Name</label><br>
+                    <input class="input" type="text" id="productName" required="required"/><br>
+
+                    <label class="label" for="dateCreation">Date of Creation</label><br>
+                    <input class="input" type="date" value="2020-04-22" id="dateCreation" required="required"><br>
+
+                    <label class="label" >Status</label><br>
+                    <select id="optionStatus" class="input">
+                        <option class="input" value="select">Select</option>
+                        <option class="input" value="inStock">In Stock</option>
+                        <option class="input" value="outofStock">Out of Stock</option>
+                    </select><br>
+
+                    <label class="labelImage" for="file">Product Image</label><br>
+                    <input class="inputImage" type="file" name="file" id="file"><br>
+
+                    <label class="label" for="quantity">Quantity</label><br>
+                    <input class="input" type="number" id="quantity" required="required"><br>
+
+                    <label class="label" for="price">Price</label><br>
+                    <input class="input" type="number" id="price" required="required"><br>
+
+                    <label class="label" for="tax">Tax</label><br>
+                    <input class="input" type="number" id="tax" required="required"><br>
+
+                    <label class="label" for="discount">Discount</label><br>
+                    <input class="input" type="number" id="discount" required="required"><br>
+
+                    <label class="label" for="vendor">Vendor</label><br>
+                    <input class="input" type="text" id="vendor" required="required"><br>
+
+                    <label class="label" for="brief">Brief</label><br>
+                    <textarea id="brief" class="input" required="required"></textarea><br>
+                
+                    <button class="button" type="submit" onclick="AddProduct()">Save</button>
+                </form>           
+            </section>
+
+            <div class="footer">
+                <h5>© 2020, Zest: Multi-Concept React Admin Template</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
